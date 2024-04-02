@@ -5,5 +5,5 @@ import { render, screen } from "@testing-library/react"
 import Spinner from "./Spinner"
 beforeEach(() => render(<Spinner on={true}/>))
 test('spinner works accordingly', () => {
-  expect(screen.getByText('Please wait...'))
+  expect(screen.getByText('Please wait...')).toBeVisible
 })
